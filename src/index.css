@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply text-gray1;
+  @apply tracking-normal;
+}
+
+.logo-font {
+  font-family: "Heebo", sans-serif;
+}
+
+.footer-font {
+  font-family: "Monserrat", sans-serif;
+}
+
+.overlay-bg {
+  transition: background-color 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.menu-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes slideInRightAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRightAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRightAnimation 0.2s ease-in-out forwards;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRightAnimation 0.2s ease-in-out forwards;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-open {
+  animation: rotateIn 0.3s ease-in-out;
+}
+
+.animate-close {
+  animation: rotateOut 0.3s ease-in-out;
+}
