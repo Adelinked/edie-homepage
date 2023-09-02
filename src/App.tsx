@@ -78,7 +78,7 @@ function App() {
           </div>
           <div className="ml-[10px] md:ml-[52px] mr-[17px] md:mr-[56px] mb-[22px] md:mb-11 rounded-[18px] overflow-hidden">
             <img
-              src="/heroImage.jpg"
+              src="heroImage.jpg"
               alt="hero image"
               className="object-cover"
             />
