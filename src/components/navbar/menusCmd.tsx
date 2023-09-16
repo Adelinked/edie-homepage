@@ -20,7 +20,7 @@ export const MenusCmd: React.FC<{
         aria-label="Menus command"
       >
         {displayListMenu ? (
-          <FaTimes className="w-6 h-6 " />
+          <FaTimes className="w-6 h-6 text-white" />
         ) : (
           <FaBars className="w-6 h-6" />
         )}

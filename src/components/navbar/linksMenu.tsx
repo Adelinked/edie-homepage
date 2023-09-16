@@ -27,7 +27,7 @@ export const LinksMenu: React.FC<{
   }
   return (
     <div
-      className={`fixed z-[10] top-0 left-0 w-full h-full select-none   ${
+      className={`fixed z-[10] top-0 left-0 w-full h-full select-none bg-blue1   ${
         displayListMenu ? "animate-slide-in-right" : ""
       }  `}
       ref={listMenuRef}
@@ -39,11 +39,11 @@ export const LinksMenu: React.FC<{
       }}
     >
       <div className="absolute right-0 w-full md:w-[300px] h-full border-l-[1px] border-gray-300 overflow-y-auto">
-        <div className="pl-[9px] pt-[13px] ext-gray1 text-2xl md:text-4xl">
+        <div className="pl-[9px] pt-[13px] ext-gray1 text-2xl md:text-4xl text-white">
           <Logo />{" "}
         </div>
 
-        <nav className=" mt-[100px] md:mt-[120px] px-6 menu-bg pt-3 w-1/2 text-gray6 ">
+        <nav className=" mt-[100px] md:mt-[120px] px-6 pt-3 w-1/2 text-gray6 ">
           {" "}
           <ul className=" text-xl mb-8 md:mb-3 leading-[1.6] font-semibold ">
             {links.map((l) => (

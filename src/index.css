@@ -13,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: color 0.5s ease-out, background-color 2s ease-out;
 }
 
 body {
@@ -29,11 +30,11 @@ body {
 }
 
 .overlay-bg {
-  transition: background-color 0.3s ease-out;
-  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.5s ease-out;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .menu-bg {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 @keyframes slideInRightAnimation {

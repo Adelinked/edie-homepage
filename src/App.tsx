@@ -76,11 +76,11 @@ function App() {
               <span>and fast web services</span>
             </div>
           </div>
-          <div className="ml-[10px] md:ml-[52px] mr-[17px] md:mr-[56px] mb-[22px] md:mb-11 rounded-[18px] overflow-hidden">
+          <div className="ml-[10px] md:ml-[52px] mr-[17px] md:mr-[56px] mb-[22px] md:mb-11 rounded-[18px] h-[145px] md:h-[354px] overflow-hidden bg-red-500">
             <img
               src="heroImage.jpg"
               alt="hero image"
-              className="object-cover"
+              className=" w-full h-full object-cover"
             />
           </div>
           <div className=" pl-[40px] md:pl-[277px] ">
@@ -115,14 +115,14 @@ function App() {
           </div>
         </section>
         <section
-          className="pt-[108px] md:pt-[200px] pl-[49px] md:pl-[165px] w-full min-h-screen "
+          className="pt-[108px] md:pt-[200px] w-full min-h-screen "
           id="services"
         >
-          <div className="text-2xl md:text-4xl font-medium  mb-6">
+          <div className="text-2xl md:text-4xl font-medium mb-6 pl-[49px] md:pl-[165px] ">
             <div className="pb-4">We offer high </div>
             <div>demand services </div>
           </div>
-          <div className="flex flex-col md:flex-row ">
+          <div className="flex flex-col md:flex-row pl-[15px] md:pl-[165px]">
             {services.map((s) => (
               <ServiceComp key={s.title} {...s} />
             ))}
