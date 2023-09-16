@@ -76,7 +76,7 @@ function App() {
               <span>and fast web services</span>
             </div>
           </div>
-          <div className="ml-[10px] md:ml-[52px] mr-[17px] md:mr-[56px] mb-[22px] md:mb-11 rounded-[18px] h-[145px] md:h-[354px] overflow-hidden bg-red-500">
+          <div className="ml-[10px] md:ml-[52px] mr-[17px] md:mr-[56px] mb-[22px] md:mb-11 rounded-[18px] h-[145px] md:h-[354px] overflow-hidden">
             <img
               src="heroImage.jpg"
               alt="hero image"
